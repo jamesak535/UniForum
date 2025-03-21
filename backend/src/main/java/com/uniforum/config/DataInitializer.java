@@ -22,13 +22,7 @@ public class DataInitializer implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // Create admin user if not exists
         if (!userRepository.existsByUsername("admin")) {
-            User admin = new User();
-            admin.setUsername("admin");
-            admin.setEmail("admin@uniforum.com");
-            admin.setPassword(passwordEncoder.encode("admin123"));
-            admin.setFullName("Admin User");
-            admin.setUniversity("Admin University");
-            admin.setRoles(Arrays.asList("ROLE_ADMIN", "ROLE_USER"));
+            User admin = new User(null, "admin", "admin@uniforum.com", passwordEncoder.encode("admin123"), "Admin User", "Admin University", Arrays.asList("ROLE_ADMIN", "ROLE_USER"));
             
             userRepository.save(admin);
             

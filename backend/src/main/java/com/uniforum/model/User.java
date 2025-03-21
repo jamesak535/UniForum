@@ -3,13 +3,11 @@ package com.uniforum.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "users")
@@ -30,7 +28,7 @@ public class User {
     @Column(nullable = false)
     private String fullName;
     
-    @Column
+    @Column(nullable = false)
     private String university;
     
     @ElementCollection(fetch = FetchType.EAGER)
