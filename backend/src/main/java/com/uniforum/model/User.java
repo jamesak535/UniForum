@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "users")
@@ -35,7 +34,7 @@ public class User {
     @Column(nullable = false)
     private String fullName;
     
-    @Column
+    @Column(nullable = false)
     private String university;
     
     @ElementCollection(fetch = FetchType.EAGER)
