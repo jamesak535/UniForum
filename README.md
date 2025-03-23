@@ -11,8 +11,10 @@ Build Main Page
 - main page will consist of login/sign up button, access to three different tabs, Profile, Snapchats of each forums(think of subreddit)
 Build Authentication, Authorization
 - Possibly by using firebase or just use postgresql? Need to verify the user is from a university (prob use their edu email)
-Build Course Selection Page
-- Schedule Planner, GPA Calculator, Graduation Requirements, Course Reviews
+Build Course Selection Page:
+    - Schedule Planner, GPA Calculator, Graduation Requirements, Course Reviews
 Build Communication Forum Page
 - Post: Author, Title, Content, CreatedAt, EditedAt, DeletedAt, Likes, Dislikes, Comments
+Post Categories:
+    - Latest, Popular, Announcement, Course Reviews, General
 - Comment: Author, Content, CreatedAt, EditedAt, DeletedAt, Likes, Dislikes, Comments 
